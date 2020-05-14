@@ -1,7 +1,8 @@
 - name: Hello World Sample
   hosts: all
   tasks:
-    cmd: uptime
+    - name: uptime report
+      cmd: uptime
 #   - name: example copying file with owner and permissions
 #     copy:
 #       src: /tmp/ansible/main.py
