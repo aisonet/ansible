@@ -1,0 +1,15 @@
+---
+- name: ngnix install and start serverices 
+  host: all
+  become: true
+  tasks: 
+  - name : install ngnix 
+    yum: 
+        name: ngnix
+        state: latest
+  
+  - name : start ngnix
+    service: 
+      name :  ngnix
+      state: started
+      

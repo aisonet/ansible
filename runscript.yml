@@ -1,0 +1,14 @@
+- name: Run a script with arguments (using 'cmd' parameter)
+  script:
+    cmd: /some/local/script.sh --some-argument 1234
+
+- name: Run a script using an executable in a system path
+  script: /some/local/script.py
+  args:
+    executable: python3
+    
+# You can also use the 'cmd' parameter instead of free form format.
+- name: This command will change the working directory to somedir/.
+  shell:
+    cmd: ls -l | grep log
+    chdir: somedir/
