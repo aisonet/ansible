@@ -3,12 +3,12 @@
     cmd: /some/local/script.sh --some-argument 1234
 
 - name: Run a script using an executable in a system path
-  script: /some/local/script.py
+  script: /tmp/ansible/main.py
   args:
-    executable: python3
+    executable: python
     
 # You can also use the 'cmd' parameter instead of free form format.
 - name: This command will change the working directory to somedir/.
   shell:
     cmd: ls -l | grep log
-    chdir: somedir/
+    chdir:/tmp/ansible/main.py
