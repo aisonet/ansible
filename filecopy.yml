@@ -1,7 +1,10 @@
-- name: example copying file with owner and permissions
-  copy:
-    src: /tmp/ansible/main.py
-    dest: /tmp/main.py
-    owner: root
-    group: root
-    mode: 0755
+- name: Hello World Sample
+  hosts: all
+  tasks:
+  - name: example copying file with owner and permissions
+    copy:
+      src: /tmp/ansible/main.py
+      dest: /tmp/main.py
+      owner: root
+      group: root
+      mode: 0755
