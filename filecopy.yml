@@ -1,7 +1,7 @@
 - name: example copying file with owner and permissions
   copy:
-    src: /srv/myfiles/foo.conf
-    dest: /etc/foo.conf
+    src: /tmp/ansible/main.py
+    dest: /tmp/main.py
     owner: root
     group: root
     mode: 0755
