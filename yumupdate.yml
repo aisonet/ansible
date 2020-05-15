@@ -2,4 +2,6 @@
   yum:
     name: '*'
     state: latest
-    exclude: kernel*,foo*
+    exclude: java*,tomcat*
+    
+    
