@@ -6,10 +6,15 @@
       script:
         cmd: uptime
 
-#   - name: example copying file with owner and permissions
-#     copy:
-#       src: /tmp/ansible/main.py
-#       dest: /tmp/main.py
-#       owner: root
-#       group: root
-#       mode: 0755
+    - name: copy a python file
+      copy:
+        src: /tmp/ansible/main.py
+        dest: /tmp
+        owner: root
+        group: root
+        mode: 0755
+
+    - name: execute install script
+      script: get-pip.py
+      args:
+        chdir: 

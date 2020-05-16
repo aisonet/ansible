@@ -1,0 +1,11 @@
+# testplay.yml
+---
+- hosts: all
+  sudo: yes
+
+  tasks:
+  - name: Copy file
+    copy: src=/tmp/ansible/main.py dest=/tmp/main.py owner=root group=root mode=755
+
+  - name: Execute script
+    command: /tmp/main.py
