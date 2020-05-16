@@ -1,3 +1,7 @@
 to check a playbook 
 
 anible_playbook -i hosts firstplay.yml --check
+
+#https://encoretechnologies.github.io/blog/2018/06/ansiblepatchingautomation/
+https://www.youtube.com/watch?v=G3secbZ7-k8
+https://docs.ansible.com/ansible/latest/user_guide/intro_inventory.html
