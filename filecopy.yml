@@ -1,9 +1,10 @@
-- name: Hello World Sample
-  hosts: all
-  tasks:
-  - name: Run a script with arguments (using 'cmd' parameter)
-    script:
-      cmd: uptime
+---
+  - name: Hello World Sample
+    hosts: all
+    tasks:
+    - name: Run a script with arguments (using 'cmd' parameter)
+      script:
+        cmd: uptime
 
 #   - name: example copying file with owner and permissions
 #     copy:
