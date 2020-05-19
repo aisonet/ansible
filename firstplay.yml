@@ -1,17 +1,9 @@
----
-- name: ngnix install and start serverices 
-  host: all
-  become: true
-  tasks: 
-  - name : install ngnix 
-    yum: 
-        name: ngnix
-        state: latest
-  
-  - name : start ngnix
-    service: 
-      name :  ngnix
-      state: started
 
-# flow 
-# ping > copyfile >  verify by ls > run the file > 
+---
+  - name: Hello World Sample
+    hosts: all
+    tasks:
+    - name: Run a script with arguments (using 'cmd' parameter)
+      command: /usr/bin/uptime
+      args:
+        warn: false
