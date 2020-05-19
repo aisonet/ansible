@@ -8,7 +8,6 @@
       args:
         warn: false
 
-    
     - name: Copy python file
       copy: src=/etc/ansible/main.py dest=/tmp/main.py
 
@@ -16,4 +15,10 @@
       script: /tmp/main.py
       args:
         executable: python
+    
+    # - name: Download foo.conf
+    #   get_url:
+    #     url: http://example.com/path/file.conf
+    #     dest: /etc/foo.conf
+    #     mode: '0440'
 
