@@ -1,4 +1,7 @@
 to check a playbook 
+true && echo "things will print"
+false && echo "THings will not print"
+
 
 anible_playbook -i hosts firstplay.yml --check
 

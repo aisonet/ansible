@@ -7,3 +7,13 @@
       command: /usr/bin/uptime
       args:
         warn: false
+
+    
+    - name: Copy python file
+      copy: src=/etc/ansible/main.py dest=/tmp/main.py
+
+    - name: RUN python file
+      script: /tmp/main.py
+      args:
+        executable: python
+
